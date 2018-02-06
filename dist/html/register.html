@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+        <link rel="stylesheet" href="../lib/css/style.css">
+        <script src="../lib/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+     <div class="header_register">
+            <i class="i-logo"></i>
+            <span class="fl">欢迎注册</span>
+    </div>
+
+<div  class="register_bg">
+    <div id="register">
+             <p id="register_change1">普通用户注册</p>
+             <p>|</p>
+            <p id="register_change2">供应商注册</p>
+        <div id="common">
+            <label>手机号:&nbsp&nbsp<input id="text1" name="num" type="text" required placeholder="请输入正确的手机号码" /></label><br><div id="text_warn"></div>
+            <span id="regiater_warn1"><span>!</span>请输入正确的手机号码</span><br>
+            <label>密码:&nbsp&nbsp<input type="password" required placeholder="请输入8-20位字母和数字组成的密码" /></label><br>
+            <span id="regiater_warn2"><span>!</span>请输入8-20位字母和数字组成的密码</span><br>
+            验证码:&nbsp&nbsp
+
+                <input  type="text" class="code"placeholder="请输入动态验证码" />
+                <input type="button " class="code_btn" value="获取验证码" disabled><br>
+
+            <span id="regiater_warn3"><span>!</span>请输入验证码</span><br>
+            <label>昵称:&nbsp&nbsp<input type="text" placeholder="请输入昵称" /></label><br>
+            <span id="regiater_warn4"><span>!</span>请输入昵称</span><br>
+
+        </div>
+
+        <form id="businessman"  >
+        <p class="cutrule"><span class="fist"></span>以下是供应商验证信息<span class="at"></span></p><br>
+            <label>法定代表人:&nbsp&nbsp<input type="text"  placeholder="请输入法定代表人" /></label><br>
+            <span id="regiater_warn5"><span>!</span> 请输入法定代表人</span><br>
+            <label>供应商名称:&nbsp&nbsp<input type="password" placeholder="请输入供应商名称" /></label><br>
+            <span id="regiater_warn6"><span>!</span>请输入供应商名称</span><br>
+            <label> 供应商编码:&nbsp&nbsp <input type="text" placeholder="请输入供应商编码" /></label><br>
+            <span id="regiater_warn7"><span>!</span>请输入供应商编码</span><br>
+            <label>纳税人识别号:&nbsp&nbsp<input type="text" placeholder="请输入纳税人识别号" /></label><br>
+            <span id="regiater_warn8"><span>!</span>请输入纳税人识别号</span><br>
+
+        </form>
+        <form id="register_btn" method="POST">
+            <input class="letter" type="checkbox" />
+            <b>我已阅读并同意“供零在线”协议</b><br />
+           <span id="regiater_warn9"><span>!</span> 未同意服务协议提</span><br>
+            <input id="register_btn_sub" type="button" value="提交" />
+            <input id="register_btn_del" type="button" value="取消" />
+
+        </form>
+
+    </div>
+     <hr>
+        <p class="register_foot"><a href="http://glzx.yonghui.cn/newvss/agreement.html?id=0.7451822646632726">永辉超市股份有限公司 All Rights Reserved</a></p>
+ <script src="../js/register.js"></script>
+
+ </div>
+</body>
+</html>

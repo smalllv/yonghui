@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>简单实用的Bootstrap3表单验证插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body>
+	<article class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>简单实用的Bootstrap3表单验证插件 <span>A user-friendly HTML5 form validation jQuery plugin for Bootstrap 3</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Form/201601062989.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<form data-toggle="validator" role="form">
+			        <div class="form-group">
+			          <label for="inputName" class="control-label">Name</label>
+			          <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+			        </div>
+			        <div class="form-group has-feedback">
+			          <label for="inputTwitter" class="control-label">Twitter</label>
+			          <div class="input-group">
+			            <span class="input-group-addon">@</span>
+			            <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+			          </div>
+			          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+			          <span class="help-block with-errors">Hey look, this one has feedback icons!</span>
+			        </div>
+			        <div class="form-group">
+			          <label for="inputEmail" class="control-label">Email</label>
+			          <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="你输入的不是一个有效的邮件地址！" required>
+			          <div class="help-block with-errors"></div>
+			        </div>
+			        <div class="form-group">
+			          <label for="inputPassword" class="control-label">Password</label>
+			          <div class="form-inline row">
+			            <div class="form-group col-sm-6">
+			              <input type="password" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+			              <span class="help-block">最少需要6个字符</span>
+			            </div>
+			            <div class="form-group col-sm-6">
+			              <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="两次输入的密码不匹配！" placeholder="Confirm" required>
+			              <div class="help-block with-errors"></div>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="form-group">
+			          <div class="radio">
+			            <label>
+			              <input type="radio" name="underwear" required>
+			              Boxers
+			            </label>
+			          </div>
+			          <div class="radio">
+			            <label>
+			              <input type="radio" name="underwear" required>
+			              Briefs
+			            </label>
+			          </div>
+			        </div>
+			        <div class="form-group">
+			          <div class="checkbox">
+			            <label>
+			              <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+			              Check yourself
+			            </label>
+			            <div class="help-block with-errors"></div>
+			          </div>
+			        </div>
+			        <div class="form-group">
+			          <button type="submit" class="btn btn-primary">Submit</button>
+			        </div>
+			      </form>
+			</div>
+		</div>
+					
+		<footer class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Form/201505101807.html">
+			  <img src="related/1.jpg" width="300" alt="基于Bootstrap的强大jQuery表单验证插件"/>
+			  <h3>基于Bootstrap的强大jQuery表单验证插件</h3>
+			</a>
+			<a href="http://www.htmleaf.com/jQuery/Form/201507122213.html">
+			  <img src="related/2.jpg" width="300" alt="validate.js | 强大纯javascript表单验证插件"/>
+			  <h3>validate.js | 强大纯javascript表单验证插件</h3>
+			</a>
+		</footer>
+	</article>
+	
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="dist/validator.js"></script>
+</body>
+</html>
